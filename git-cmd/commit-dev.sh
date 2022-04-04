@@ -26,5 +26,5 @@ read -p "Voulez-vous merger en PROD ? [y/n]" merge_on_prod
 
 if [ $merge_on_prod = "y" ]
 then
-     eval "./merge-on-prod.sh"
+     eval "git-cmd/merge-on-prod.sh"
 fi
