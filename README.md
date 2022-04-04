@@ -10,6 +10,6 @@
 - Open `git-cmd/commit-dev.sh` replace the branch DEV for project
 - Open `git-cmd/commit-dev.sh` replace the branch DEV for project
 
-## Using 
+## Use
 In your project launch :
 eg : `# ./commit-project.sh`
