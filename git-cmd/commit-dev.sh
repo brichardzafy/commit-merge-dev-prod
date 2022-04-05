@@ -4,7 +4,7 @@ current_rep=`pwd`;
 cd $current_rep;
 echo "Je suis dans $current_rep " ;
 id_last_commit=`git rev-parse HEAD`
-read -p "Voulez-vous utiliser la derniere ? [y/n]" use_last_commit
+read -p "Voulez-vous utiliser la derniere commit? [y/n]" use_last_commit
 if [ $use_last_commit = "y" ]
 then
       git commit -ac $id_last_commit --no-verify --no-status
@@ -14,7 +14,7 @@ else
 fi
 current_branch=`git rev-parse --abbrev-ref HEAD`
 #@todo : A remplacer selon nom de la branche qui fait le deploiement en DEV
-branch_dev="dev-v3"
+branch_dev="dev"
 git checkout $branch_dev
 git pull origin $branch_dev
 git merge $current_branch
@@ -26,5 +26,5 @@ read -p "Voulez-vous merger en PROD ? [y/n]" merge_on_prod
 
 if [ $merge_on_prod = "y" ]
 then
-     eval "git-cmd/merge-on-prod.sh"
+     eval "commit-merge-dev-prod/git-cmd/merge-on-prod.sh"
 fi
