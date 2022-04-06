@@ -14,7 +14,7 @@ else
 fi
 current_branch=`git rev-parse --abbrev-ref HEAD`
 #@todo : A remplacer selon nom de la branche qui fait le deploiement en DEV
-branch_dev="dev"
+branch_dev="dev-v3"
 git checkout $branch_dev
 git pull origin $branch_dev
 git merge $current_branch
