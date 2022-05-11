@@ -5,7 +5,7 @@
 
 ## Configuration
 
-- Make file `commit-project.sh` in your project
+- Give the necessary permission (+x) for the file `./commit-merge-dev-prod/commit-project.sh`
 - Edit path `"../../../git-cmd/commit-dev.sh"`
 - Open `git-cmd/commit-dev.sh` replace the branch DEV for project
 - Open `git-cmd/commit-dev.sh` replace the branch DEV for project
@@ -13,4 +13,4 @@
 ## Usage
 In your project launch :
 
-eg : `# ./commit-project.sh`
+eg : `# ./commit-merge-dev-prod/commit-project.sh`
