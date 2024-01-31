@@ -14,10 +14,10 @@ else
 fi
 current_branch=`git rev-parse --abbrev-ref HEAD`
 #@todo : A remplacer selon nom de la branche qui fait le deploiement en DEV
-branch_dev="dev"
+branch_dev="dev2023"
 git checkout $branch_dev
 git pull origin $branch_dev
-git merge $current_branch
+git cherry-pick $current_branch
 git push origin $branch_dev
 git checkout $current_branch
 

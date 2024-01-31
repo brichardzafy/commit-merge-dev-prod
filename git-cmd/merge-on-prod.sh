@@ -5,7 +5,7 @@ cd $current_rep;
 echo "Répertoire Actuel : $current_rep " ;
 current_branch=`git rev-parse --abbrev-ref HEAD`
 #@todo : A remplacer selon nom de la branche qui fait le deploiement en PROD
-branch_prod="master"
+branch_prod="prod-v3"
 echo "Branch Actuel : $branch_prod " ;
 git checkout $branch_prod
 git pull origin $branch_prod
